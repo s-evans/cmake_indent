@@ -25,6 +25,7 @@ endif
 let b:did_indent = 1
 
 setlocal indentexpr=CMakeGetIndent(v:lnum)
+setlocal commentstring=#%s
 
 " Only define the function once.
 if exists("*CMakeGetIndent")
